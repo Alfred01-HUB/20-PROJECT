@@ -1,0 +1,4 @@
+In this project, I learned how JavaScript event listeners work by building a counter with increment, decrement, and reset functionality. The counter starts at a default value of 0. Using JavaScript, I selected the buttons and the display element by their IDs from the HTML.
+Each button has its own event listener attached to the `click` event. When a button is clicked, a corresponding function runs. The increment function increases the count, the decrement function reduces it, and the reset function returns the value back to zero. After each action, the updated value is reflected immediately on the page.
+This project helped me understand how JavaScript connects to the DOM, how multiple event listeners can control different behaviors, and how user interactions directly update the interface in real time.
+I got to understand the difference between innerHtml ,textContent, innerText

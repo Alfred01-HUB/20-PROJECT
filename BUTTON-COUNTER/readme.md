@@ -1,0 +1,3 @@
+In this project, I learned how JavaScript event listeners work at a basic level. I started by creating a counter with an initial value of 0. Using JavaScript, I selected the button and the display element by their IDs from the HTML.
+I then attached an event listener to the button using the click event. When the button is clicked, a function is triggered. In this case, the function is increment(), which increases the counter value and updates what is displayed on the page.
+This helped me understand how JavaScript interacts with the DOM: you select an element, listen for a user action, and then run a function that changes something on the page based on that action. It showed me how user interactions can drive behavior in a web application.
