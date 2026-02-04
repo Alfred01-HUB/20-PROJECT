@@ -4,7 +4,7 @@ console.log(button)
 
 let count = 0
 
-function incrementCount(){
+const  incrementCount=()=>{
     count ++
     countDisplay.textContent=count;
 }
