@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Mirror</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        .input-group {
+            margin-bottom: 30px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+        }
+        
+        #textInput {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: border-color 3s;
+        }
+        
+        #textInput:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .mirror-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+
+        }
+        
+        .mirror-label {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        
+        #mirrorText {
+            font-size: 18px;
+            color: #333;
+            min-height: 24px;
+            word-wrap: break-word;
+        }
+        
+        .empty-state {
+            color: #ccc;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Input Mirror</h1>
+        
+        <div class="input-group">   
+            <label for="textInput">Type something:</label>
+            <input 
+                type="text" 
+                id="textInput" 
+                placeholder="Start typing..."
+            >
+        </div>
+        
+        <div class="mirror-box">
+            <div class="mirror-label">Mirror Output:</div>
+            <div id="mirrorText" class="empty-state">hello world</div>
+        </div>
+    </div>
+   
+   <script>
+    const SelectInputText = document.getElementById("textInput")
+    const SelectMirrorText = document.getElementById("mirrorText")
+
+    //     SelectInputText.addEventListener("textInput", () => {
+    //      console.log(SelectInputText.value);
+    // });
+
+    const mirrorText = () =>{
+        // console.log(SelectInputText.value)
+        const userText = SelectInputText.value;
+
+        if (SelectInputText !== " "){
+            SelectMirrorText.textContent = userText
+         }else {
+         SelectMirrorText.textContent = ""
+        }
+    }
+
+
+    SelectInputText.addEventListener('input',mirrorText)
+
+    </script>
+
+    
+
+</body>
+</html>
