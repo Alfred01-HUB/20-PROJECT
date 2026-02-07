@@ -1,1 +1,69 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+  border: 1px solid burlywood;
+  padding: 30px;
+  width: vw;
+  max-height: max-content;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.527);
+}
+
+.list-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-input label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.list-input input{
+    padding: 5px;
+    height: 25px;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    background:#764ba23e;
+}
+
+.button{
+    padding-top: 10px;
+}
+
+#AddButton{
+    height: 30px;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    color: rgba(33, 15, 2, 0.95);
+    cursor: pointer;
+}
+
+#AddButton:hover{
+    background: #b166ea;
+    color: rgb(249, 245, 245);
+}
+
+.list-item{
+    border-radius: 5px;
+    padding: 1px;
+    padding-right: 10px;
+    background-color: #764ba23e;
+    margin-top: 10px;
+}
+
+#empty-list{
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
